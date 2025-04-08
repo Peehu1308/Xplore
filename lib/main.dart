@@ -1,3 +1,4 @@
+import 'package:explore/Enrolled_clubs.dart';
 import 'package:explore/calender.dart';
 import 'package:explore/club.dart';
 import 'package:explore/home_screen.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:SignUp(),
+      home:Home_Screen(),
     );
   }
 }

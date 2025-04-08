@@ -55,7 +55,7 @@ class ClubScreen extends StatelessWidget {
                   _categoryButton(context, "Dance", "lib/assets/dance.png"),
                   _categoryButton(context, "Coding", "lib/assets/code.jpeg"),
                   _categoryButton(context, "Music", "lib/assets/music.webp"),
-                  _categoryButton(context, "Cultural", "lib/git assets/culture.jpg"),
+                  _categoryButton(context, "Cultural", "lib/assets/culture.jpg"),
                 ],
               ),
               const SizedBox(height: 30),

@@ -1,5 +1,7 @@
 // File: home_screen.dart
 
+import 'package:explore/Enrolled_clubs.dart';
+import 'package:explore/club.dart';
 import 'package:explore/components/taskbar.dart';
 import 'package:flutter/material.dart';
 
@@ -98,7 +100,7 @@ class _Home_ScreenState extends State<Home_Screen> {
                                   const SizedBox(height: 20),
                                     ElevatedButton(
                                         onPressed: () {
-                                          print('Explore the clubs');
+                                          Navigator.push(context,MaterialPageRoute(builder: (context) => const EnrolledClubs()));
                                         },
                                     style: ElevatedButton.styleFrom(
                                       backgroundColor: Colors.white,
