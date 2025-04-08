@@ -19,9 +19,9 @@ class Login extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xFF2F1073),
-              Color(0xFFA88AE8),
-              Color(0xFFBCA6EB),
+              Color.fromARGB(255, 255, 254, 254),
+              Color.fromARGB(255, 249, 243, 248),
+              Color.fromARGB(255, 251, 250, 251),
             ]),
       ),
       child: Padding(
@@ -47,7 +47,7 @@ class Login extends StatelessWidget {
                   child: ClipPolygon(
                     sides: 6,
                     borderRadius: 16.0,
-                    child: Container(color: Colors.deepPurple.shade200),
+                    child: Container(color: Color.fromARGB(255, 243, 213, 227)),
                   ),
                 ),
                 SizedBox(
@@ -66,14 +66,14 @@ class Login extends StatelessWidget {
                     sides: 6,
                     borderRadius: 6.0,
                     child: Container(
-                      color: Colors.white,
+                      color: Color(0xFFE8A9C5),
                       alignment: Alignment.center,
                       child: const Text(
-                        'Explore',
+                        'Xplore',
                         style: TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
-                          color: Colors.deepPurple,
+                          color: Colors.black,
                         ),
                       ),
                     ),
@@ -98,7 +98,7 @@ class Login extends StatelessWidget {
                   Navigator.push(context,MaterialPageRoute(builder: (context) => const Home_Screen()));
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurple,
+                  backgroundColor: Colors.black,
                   shape: const StadiumBorder(
                       // borderRadius: BorderRadius.circular(100),
                       ),
@@ -116,7 +116,7 @@ class Login extends StatelessWidget {
                   },
                   child: const Text(
                     "Create an Account",
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.black),
                   )),
                   const SizedBox(height: 10),
                 TextButton(
@@ -125,7 +125,7 @@ class Login extends StatelessWidget {
                   },
                   child: const Text(
                     "Forget Password",
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.black),
                   )),
           ],
           
