@@ -4,6 +4,7 @@ import 'package:explore/home_screen.dart';
 // import 'package:explore/home_screen.dart';
 import 'package:explore/login.dart';
 import 'package:explore/profile.dart';
+import 'package:explore/sign_up.dart';
 import 'package:explore/welcome_back.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Login(),
+      home:SignUp(),
     );
   }
 }
