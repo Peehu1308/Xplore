@@ -52,10 +52,10 @@ class ClubScreen extends StatelessWidget {
                 spacing: 12,
                 runSpacing: 12,
                 children: [
-                  _categoryButton("Dance", "images/image.png"),
-                  _categoryButton("Coding", "assets/icons/coding.png"),
-                  _categoryButton("Music", "assets/icons/music.png"),
-                  _categoryButton("Cultural", "assets/icons/cultural.png"),
+                  _categoryButton(context, "Dance", "lib/assets/dance.png"),
+                  _categoryButton(context, "Coding", "lib/assets/code.jpeg"),
+                  _categoryButton(context, "Music", "lib/assets/music.webp"),
+                  _categoryButton(context, "Cultural", "lib/assets/culture.jpg"),
                 ],
               ),
               const SizedBox(height: 30),
@@ -124,9 +124,11 @@ class ClubScreen extends StatelessWidget {
     );
   }
 
-  Widget _categoryButton(String label, String assetPath) {
+  Widget _categoryButton(BuildContext context, String label, String assetPath) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      height: 50,
+      width: MediaQuery.of(context).size.width * 0.4,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(30),
