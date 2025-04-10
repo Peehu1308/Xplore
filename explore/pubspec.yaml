@@ -1,0 +1,28 @@
+name: explore
+description: A Flutter project for exploring clubs and events.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_polygon: ^1.0.0 # Add the appropriate version for the polygon package
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/code.jpeg
+    - lib/assets/music.webp
+    - lib/assets/dance.png
+    - lib/assets/culture.jpg
+    - images/gdgc_logo.png
+    - images/octaves_logo.png
+    - images/bhangra_logo.png
+    - images/netra_logo.png

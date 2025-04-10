@@ -1,3 +1,4 @@
+import 'package:explore/components/taskbar.dart';
 import 'package:flutter/material.dart';
 
 class TimelineScreen extends StatelessWidget {
@@ -7,16 +8,7 @@ class TimelineScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF5F4FC),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 1, // timeline selected
-        selectedItemColor: Colors.purple,
-        unselectedItemColor: Colors.grey,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.chat), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.calendar_month), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
-        ],
-      ),
+      bottomNavigationBar: Taskbar(currentIndex: 2), // Use Taskbar here
       body: SafeArea(
         child: Column(
           children: [
@@ -86,7 +78,6 @@ class TimelineScreen extends StatelessWidget {
               _DateChip(day: "5", weekday: "SUN", isSelected: true),
               _DateChip(day: "6", weekday: "MON", isSelected: false),
               _DateChip(day: "7", weekday: "TUE", isSelected: false),
-              _DateChip(day: "8", weekday: "WED", isSelected: false),
               Icon(Icons.arrow_forward_ios, size: 16),
             ],
           ),
